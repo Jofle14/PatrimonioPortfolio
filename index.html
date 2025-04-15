@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <div class="profile-card">
+    <div class="profile-img">
+      <img src="assets/profile.jpg" alt="Profile Picture">
+    </div>
+    <h2 class="name">Jofel John Patrimonio</h2>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+    <div class="tags">
+      <span class="tag">Web Developer</span>
+      <span class="tag">UI/UX</span>
+      <span class="tag">Freelancer</span>
+    </div>
+  </div>
+
+  <div class="sections-container">
+    <div class="section" id="background">
+      <h2 onclick="toggleDetails('background-details')">Background</h2>
+      <div class="details" id="background-details">
+        <p>I am a passionate web developer with expertise in creating dynamic and responsive websites. I have a strong background in UI/UX design and enjoy solving complex problems through code.</p>
+      </div>
+    </div>
+  
+    <div class="section" id="projects">
+      <h2 onclick="toggleDetails('projects-details')">Projects</h2>
+      <div class="details" id="projects-details">
+        <ul>
+          <li><strong>Portfolio Website:</strong> A personal portfolio showcasing my skills and projects.</li>
+          <li><strong>E-commerce Platform:</strong> Developed a fully functional e-commerce website with payment integration.</li>
+          <li><strong>Task Manager App:</strong> A productivity tool for managing tasks and deadlines.</li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="section" id="skills">
+      <h2 onclick="toggleDetails('skills-details')">Skills</h2>
+      <div class="details" id="skills-details">
+        <ul>
+          <li><strong>Programming Languages:</strong> JavaScript, Python, HTML, CSS</li>
+          <li><strong>Frameworks:</strong> React, Node.js, Express</li>
+          <li><strong>Design Tools:</strong> Figma, Adobe XD</li>
+          <li><strong>Other Skills:</strong> Responsive Design, API Integration, Version Control (Git)</li>
+        </ul>
+    </div>
+  </div>
+  
+  <script src="server.js"></script>
+</body>
+</html>

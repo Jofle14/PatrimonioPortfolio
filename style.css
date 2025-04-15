@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #f2f2f2;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center;
+  height: 100%;
+}
+  
+  .profile-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+  }
+  
+  .profile-img img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #ddd;
+    margin-bottom: 15px;
+  }
+  
+  .name {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .social-icons {
+    margin-bottom: 15px;
+  }
+  
+  .social-icons a {
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.4rem;
+    color: #555;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #0077b5; /* LinkedIn blue */
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .tag {
+    background: #e0e0e0;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #444;
+  }
+  
+  .section {
+    max-width: 300px; /* Limit the width of each card */
+    text-align: center; /* Center align text inside sections */
+    background: white; /* Card background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for card effect */
+    padding: 20px; /* Add padding inside the card */
+    margin: 10px; /* Add margin between cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  }
+
+  .section:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+  }
+
+  .section h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .section p,
+  .section ul {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  .sections-container {
+    display: flex; /* Align sections horizontally */
+    justify-content: center; /* Center align the sections */
+    gap: 20px; /* Add space between sections */
+    margin-top: 20px; /* Add space between the profile card and sections */
+    align-items: flex-start; /* Align sections to the top */
+  }
+  
+
+
+  .details {
+    max-height: 0; /* Initially hidden */
+    overflow: hidden; /* Hide overflowing content */
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; /* Smooth transition for height, opacity, and visibility */
+    visibility: hidden; /* Make it invisible when hidden */
+    opacity: 0; /* Fade out when hidden */
+  }
+  
+  .details.show {
+    max-height: 500px; /* Large enough to show the content */
+    visibility: visible; /* Make it visible when shown */
+    opacity: 1; /* Fade in when shown */
+  }
+  
